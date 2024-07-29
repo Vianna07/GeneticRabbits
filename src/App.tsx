@@ -1,14 +1,12 @@
-// import logo './assets/logo.svg';
+import Logo from './components/Logo'
 
-function App() {
+export default function App() {
   return (
     <>
-      <h1 className="text-2xl font-bold underline hover:text-sky-600 cursor-pointer">
+      <h1 className="flex text-2xl flex font-bold underline text-2xl hover:text-sky-600 cursor-pointer">
         Hello World!
       </h1>
-      {/* <Logo /> */}
+      <Logo />
     </>
-  )
+  );
 }
-
-export default App

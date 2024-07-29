@@ -6,8 +6,15 @@ import react from '@vitejs/plugin-react-swc'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  root: 'src',
+  css: {
+    modules: {
+      generateScopedName: '[name]__[local]___[hash:base64:5]',
+    },
+    devSourcemap: true,
+  },
   build: {
-    outDir: '../dist'
+    outDir: '../dist',
   },
   test: {
     globals: true,
@@ -18,5 +25,5 @@ export default defineConfig({
     //   reporter: ['html', 'text', 'lcov'],
     //   exclude: ['**/__tests__/**', '**/__mocks__/**']
     // }
-  }
+  },
 })
