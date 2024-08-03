@@ -18,12 +18,7 @@ export default defineConfig({
   },
   test: {
     globals: true,
-    // environment: 'jsdom',
-    // setupFiles: ['vitest-global-setup.ts'],
-    // testTimeout: 10000,
-    // coverage: {
-    //   reporter: ['html', 'text', 'lcov'],
-    //   exclude: ['**/__tests__/**', '**/__mocks__/**']
-    // }
+    environment: "jsdom",
+    setupFiles: ["./vitest-global-setup.ts"],
   },
 });
