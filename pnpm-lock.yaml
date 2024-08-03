@@ -69,12 +69,15 @@ importers:
       postcss:
         specifier: ^8.4.40
         version: 8.4.40
+      postcss-advanced-variables:
+        specifier: ^4.0.0
+        version: 4.0.0(postcss@8.4.40)
       postcss-calc:
         specifier: ^10.0.0
         version: 10.0.0(postcss@8.4.40)
-      postcss-each:
-        specifier: ^1.1.0
-        version: 1.1.0(postcss@8.4.40)
+      postcss-nested:
+        specifier: ^6.2.0
+        version: 6.2.0(postcss@8.4.40)
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -138,6 +141,10 @@ packages:
 
   '@bcoe/v8-coverage@0.2.3':
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
+
+  '@csstools/sass-import-resolve@1.0.0':
+    resolution: {integrity: sha512-pH4KCsbtBLLe7eqUrw8brcuFO8IZlN36JjdKlOublibVdAIPHCzEnpBWOVUXK5sCf+DpBi8ZtuWtjF0srybdeA==}
+    engines: {node: '>=4.0.0'}
 
   '@esbuild/aix-ppc64@0.21.5':
     resolution: {integrity: sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ==}
@@ -1434,16 +1441,17 @@ packages:
     resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==}
     engines: {node: '>= 6'}
 
+  postcss-advanced-variables@4.0.0:
+    resolution: {integrity: sha512-ooRwPl53XDEfZtc52BimJFwTKFPqeJGmSUuX90ZsN+ZTP9ViTsyLbRcD0gwtEw7su0o6P71ps7gpnOa4eGkx4g==}
+    engines: {node: ^10 || ^12 || >=14}
+    peerDependencies:
+      postcss: ^8.4
+
   postcss-calc@10.0.0:
     resolution: {integrity: sha512-OmjhudoNTP0QleZCwl1i6NeBwN+5MZbY5ersLZz69mjJiDVv/p57RjRuKDkHeDWr4T+S97wQfsqRTNoDHB2e3g==}
     engines: {node: ^18.12 || ^20.9 || >=22.0}
     peerDependencies:
       postcss: ^8.4.38
-
-  postcss-each@1.1.0:
-    resolution: {integrity: sha512-YfTPHHAPFVRgEJfLg9RM4R9WYEHVU9Rf1R8QgZfnObwV2dgNqzTLzTl0w5tF71ApFcYLiJAXiTpHAoqJFYcZVw==}
-    peerDependencies:
-      postcss: ^8.0.0
 
   postcss-import@15.1.0:
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
@@ -1478,12 +1486,6 @@ packages:
   postcss-selector-parser@6.1.1:
     resolution: {integrity: sha512-b4dlw/9V8A71rLIDsSwVmak9z2DuBUB7CA1/wSdelNEzqsjoSPeADTWNO09lpH49Diy3/JIZ2bSPB1dI3LJCHg==}
     engines: {node: '>=4'}
-
-  postcss-simple-vars@6.0.3:
-    resolution: {integrity: sha512-fkNn4Zio8vN4vIig9IFdb8lVlxWnYR769RgvxCM6YWlFKie/nQaOcaMMMFz/s4gsfHW4/5bJW+i57zD67mQU7g==}
-    engines: {node: '>=10.0'}
-    peerDependencies:
-      postcss: ^8.2.1
 
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
@@ -2011,6 +2013,8 @@ snapshots:
       to-fast-properties: 2.0.0
 
   '@bcoe/v8-coverage@0.2.3': {}
+
+  '@csstools/sass-import-resolve@1.0.0': {}
 
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
@@ -3248,16 +3252,16 @@ snapshots:
 
   pirates@4.0.6: {}
 
+  postcss-advanced-variables@4.0.0(postcss@8.4.40):
+    dependencies:
+      '@csstools/sass-import-resolve': 1.0.0
+      postcss: 8.4.40
+
   postcss-calc@10.0.0(postcss@8.4.40):
     dependencies:
       postcss: 8.4.40
       postcss-selector-parser: 6.1.1
       postcss-value-parser: 4.2.0
-
-  postcss-each@1.1.0(postcss@8.4.40):
-    dependencies:
-      postcss: 8.4.40
-      postcss-simple-vars: 6.0.3(postcss@8.4.40)
 
   postcss-import@15.1.0(postcss@8.4.40):
     dependencies:
@@ -3287,10 +3291,6 @@ snapshots:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
-
-  postcss-simple-vars@6.0.3(postcss@8.4.40):
-    dependencies:
-      postcss: 8.4.40
 
   postcss-value-parser@4.2.0: {}
 

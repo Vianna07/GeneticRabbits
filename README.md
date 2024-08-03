@@ -1,24 +1,49 @@
+# GeneticRabbits
 
+![GeneticRabbits Logo](./public/logo.svg)
 
+## Descrição
 
-## Expanding the ESLint configuration
+**GeneticRabbits** é um jogo educacional desenvolvido para ensinar conceitos básicos de genética de forma divertida e interativa. O jogo foca em conceitos como dominância e recessividade, dominância incompleta, codominância, alelos letais, segunda lei de Mendel, polialelia, epistasia e herança poligênica. Os jogadores aprendem sobre genética ao criar e manipular coelhos virtuais com diferentes características genéticas.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Funcionalidades
 
-- Configure the top-level `parserOptions` property like this:
+- **Criação de Coelhos**: Os jogadores podem criar coelhos com diferentes combinações genéticas.
+- **Experimentação Genética**: Experimente com cruzamentos para ver os diferentes resultados baseados em leis genéticas.
+- **Interatividade**: Interface intuitiva e amigável para todas as idades.
+- **Educação Divertida**: Conceitos complexos explicados de maneira simples e divertida.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Conceitos de Genética Abordados
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Dominância e Recessividade**
+- **Dominância Incompleta**
+- **Codominância**
+- **Alelo Letal**
+- **Segunda Lei de Mendel**
+- **Polialelia**
+- **Epistasia**
+- **Herança Poligênica**
+
+## Tecnologias Utilizadas
+
+- **Controle de Versão**: Git
+- **Frontend**: React
+- **Linguagem**: TypeScript
+- **CSS**: PostCSS, TailwindCSS
+- **Build Tool**: Vite
+- **Testes**: Vitest, Testing Library
+- **Linting**: ESLint, Prettier
+- **Outras Ferramentas**:
+  - **@vitejs/plugin-react-swc**: Plugin Vite para suporte a React usando SWC.
+  - **@typescript-eslint/eslint-plugin** e **@typescript-eslint/parser**: Ferramentas para linting e parsing de TypeScript.
+  - **autoprefixer**: Prefixos automáticos para CSS.
+  - **jsdom**: Simulação de um ambiente de navegador para testes.
+
+## Instalação
+
+Siga os passos abaixo para configurar o ambiente de desenvolvimento:
+
+<!-- 1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/geneticrabbits.git
+   cd geneticrabbits -->

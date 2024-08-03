@@ -1,6 +1,7 @@
 export default {
   plugins: {
-    "postcss-each": {},
+    "postcss-nested": {},
+    "postcss-advanced-variables": {},
     "postcss-calc": {},
     tailwindcss: {},
     autoprefixer: {},
