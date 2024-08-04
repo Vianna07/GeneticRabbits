@@ -6,7 +6,7 @@ export default function App() {
 
   return (
     <>
-      <h1 className="hover:text-primary flex cursor-pointer text-2xl font-bold underline">
+      <h1 className="flex cursor-pointer text-2xl font-bold underline hover:text-primary">
         {t("Hello world")}
       </h1>
       <Logo />

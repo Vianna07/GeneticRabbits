@@ -1,4 +1,4 @@
-# Backlog do Projeto
+# Backlog do projeto
 
 ## 1. Configuração do Ambiente
 - **Configurar o projeto com Vite, React e TypeScript.**
@@ -35,23 +35,29 @@
 - **Herança Poligênica**
   - Implementar a visualização da herança poligênica.
 
-## 3. Teste e Validação
+## 3. Internacionalização
+- **Adicionar i18n ao projeto**
+  - Configurar o projeto para suportar múltiplos idiomas.
+  - Traduzir a interface do usuário para os idiomas suportados.
+  - Implementar a lógica para seleção de idioma pelo usuário.
+
+## 4. Teste e Validação
 - **Testes Unitários**
   - Criar testes unitários para a lógica de genética.
   - Testar a funcionalidade de cruzamento e visualização de traços.
 - **Testes End-to-End**
   - Implementar testes end-to-end para verificar a interação completa do usuário com o jogo.
 
-## 4. Aprimoramentos e Feedback
+## 5. Aprimoramentos e Feedback
 - Coletar feedback dos usuários sobre a jogabilidade e eficácia educacional.
 - Melhorar a interface com base no feedback dos usuários.
 - Adicionar dicas e orientações interativas para ajudar na aprendizagem.
 
-## 5. Documentação
+## 6. Documentação
 - Criar documentação para desenvolvedores (instruções de setup e arquitetura do projeto).
 - Criar documentação para usuários finais (como jogar e aprender genética com o jogo).
 
-## 6. Deploy e Manutenção
+## 7. Deploy e Manutenção
 - Preparar o projeto para deploy em ambientes de produção.
 - Monitorar o jogo para bugs e problemas de desempenho.
 - Atualizar o jogo com melhorias e novos conteúdos baseados em feedback.

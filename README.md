@@ -1,10 +1,10 @@
-# GeneticRabbits
+# genetic-rabbits
 
-![GeneticRabbits Logo](./public/logo.svg)
+![genetic-rabbits Logo](./public/logo.svg)
 
 ## Descrição
 
-**GeneticRabbits** é um jogo educacional desenvolvido para ensinar conceitos básicos de genética de forma divertida e interativa. O jogo foca em conceitos como dominância e recessividade, dominância incompleta, codominância, alelos letais, segunda lei de Mendel, polialelia, epistasia e herança poligênica. Os jogadores aprendem sobre genética ao criar e manipular coelhos virtuais com diferentes características genéticas.
+**genetic-rabbits** é um jogo educacional desenvolvido para ensinar conceitos básicos de genética de forma divertida e interativa. O jogo foca em conceitos como dominância e recessividade, dominância incompleta, codominância, alelos letais, segunda lei de Mendel, polialelia, epistasia e herança poligênica. Os jogadores aprendem sobre genética ao criar e manipular coelhos virtuais com diferentes características genéticas.
 
 ## Funcionalidades
 
@@ -67,7 +67,7 @@ Utilizamos namespaces como prefixos para indicar a categoria ou contexto de uso 
 - `u-` para utilitários (`u-hidden`, `u-clearfix`).
 - `js-` para classes usadas por scripts JavaScript (`js-toggle`, `js-modal`).
 
-## Instalação
+## Instalação e ambiente de desenvolvimento
 genetic-rabbits requer [Node.js](https://nodejs.org/en) e [Pnpm](https://pnpm.io/).
 Instale o [Node.js](https://nodejs.org/en) na versão 20, em seguida abra algum terminal e exeucte o comando `npm install -g pnpm@9` para instalar o  [Pnpm](https://pnpm.io/).
 
