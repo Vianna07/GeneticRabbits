@@ -1,18 +1,27 @@
 {
-    "recommendations": [
-        "dbaeumer.vscode-eslint",
-        "bradlc.vscode-tailwindcss",
-        "formulahendry.auto-complete-tag",
-        "editorconfig.editorconfig",
-        "eamodio.gitlens",
-        "visualstudioexptteam.vscodeintellicode",
-        "pkief.material-icon-theme",
-        "christian-kohler.path-intellisense",
-        "pnp.polacode",
-        "csstools.postcss",
-        "tabnine.tabnine-vscode",
-        "wayou.vscode-todo-highlight",
-        "shardulm94.trailing-spaces",
-        "steoates.autoimport"
-    ]
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+    "formulahendry.auto-complete-tag",
+    "editorconfig.editorconfig",
+    "eamodio.gitlens",
+    "visualstudioexptteam.vscodeintellicode",
+    "pkief.material-icon-theme",
+    "christian-kohler.path-intellisense",
+    "pnp.polacode",
+    "csstools.postcss",
+    "tabnine.tabnine-vscode",
+    "wayou.vscode-todo-highlight",
+    "shardulm94.trailing-spaces",
+    "steoates.autoimport"
+  ]
 }
+
+
+// Coloque isso no settings.json:
+//
+// {
+//   "editor.codeActionsOnSave": {
+//     "source.fixAll.eslint": "explicit", // true
+//   }
+// }

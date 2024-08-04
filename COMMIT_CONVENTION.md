@@ -5,7 +5,6 @@ Para manter a consistência no histórico de commits, siga estas diretrizes:
 ## Formato do Commit
 O formato e os tipos do commit são com base na [convenção de commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
-
 ### Tipos de Commit
 - **feat**: Uma nova funcionalidade.
 - **fix**: Uma correção de bug.
